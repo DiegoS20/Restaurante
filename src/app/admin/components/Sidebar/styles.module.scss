@@ -1,0 +1,33 @@
+.nav {
+  min-height: 100vh;
+  width: 20vw;
+  -webkit-box-shadow: 2px 1px 7px 1px #616161;
+  box-shadow: 2px 1px 7px 1px #616161;
+
+  .logo {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .tabs {
+    .tab {
+      margin: 15px 50px;
+      padding: 15px 30px;
+      border-radius: 10px;
+      color: #000;
+      text-decoration: none;
+      display: block;
+      font-size: 20px;
+
+      &.active,
+      &:hover {
+        background-color: var(--primary-color);
+        text-shadow: 1px 1px 2px #000000;
+        color: #fff;
+      }
+    }
+  }
+}

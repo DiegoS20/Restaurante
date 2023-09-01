@@ -1,0 +1,14 @@
+[
+  {
+    "path": "comidas",
+    "text": "Comidas"
+  },
+  {
+    "path": "categorias",
+    "text": "Categorías"
+  },
+  {
+    "path": "pedidos",
+    "text": "Pedidos"
+  }
+]
