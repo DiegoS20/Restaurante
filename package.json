@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm prisma generate && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "dev:db": "docker compose --env-file=.env.local up --force-recreate -d",
     "migrate:dev": "npx dotenv -e .env.local -- prisma migrate dev",
-    "migrate:prod": "npx dotenv -e .env.local -- prisma migrate deploy"
+    "migrate:prod": "npx dotenv -e .env.local -- prisma migrate deploy",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
